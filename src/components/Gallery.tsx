@@ -1,15 +1,12 @@
 import Image from "next/image";
 
 const photos = [
+  { src: "/images/facade.webp", label: "La façade", note: "17 rue Chaligny, à la nuit tombée" },
   { src: "/images/poisson-table.jpg", label: "À table", note: "Poisson du jour, verre de blanc" },
   { src: "/images/tourteau.jpg", label: "Fruits de mer", note: "Tourteau, citron, sauce maison" },
+  { src: "/images/oeuf-poche-girolles.jpg", label: "Girolles & œuf poché", note: "Persillade, jus vert" },
+  { src: "/images/os-a-moelle.jpg", label: "Os à moelle", note: "Façon bistrot, pain grillé" },
   { src: "/images/assiettes-collage.jpg", label: "Nos assiettes", note: "Une cuisine soignée, assiette par assiette" },
-];
-
-const placeholders = [
-  { label: "La salle", note: "Ambiance brasserie-cantine" },
-  { label: "La terrasse", note: "Animée aux beaux jours" },
-  { label: "La façade", note: "17 rue Chaligny" },
 ];
 
 export default function Gallery() {
@@ -23,9 +20,7 @@ export default function Gallery() {
           L&rsquo;ambiance de la maison
         </h2>
         <p className="mt-4 leading-relaxed text-charcoal/70">
-          Les autres emplacements (salle, terrasse, façade, équipe) sont
-          prêts à recevoir vos photographies dès qu&rsquo;elles seront
-          disponibles.
+          La façade, la cuisine du chef et quelques assiettes du moment.
         </p>
       </div>
 
@@ -46,26 +41,6 @@ export default function Gallery() {
             <div className="pointer-events-none absolute inset-0 flex flex-col justify-end p-4">
               <p className="font-display text-lg font-semibold text-cream">{photo.label}</p>
               <p className="mt-1 text-xs text-cream/80">{photo.note}</p>
-            </div>
-          </div>
-        ))}
-
-        {placeholders.map((item, i) => (
-          <div
-            key={item.label}
-            className="relative aspect-[4/5] overflow-hidden rounded-2xl"
-            style={{
-              background:
-                i % 3 === 0
-                  ? "linear-gradient(150deg, #6f1d2b 0%, #4a1119 100%)"
-                  : i % 3 === 1
-                    ? "linear-gradient(150deg, #362a22 0%, #241b16 100%)"
-                    : "linear-gradient(150deg, #b8894f 0%, #8a2c3c 100%)",
-            }}
-          >
-            <div className="absolute inset-0 flex flex-col justify-end p-4">
-              <p className="font-display text-lg font-semibold text-cream">{item.label}</p>
-              <p className="mt-1 text-xs text-cream/70">{item.note}</p>
             </div>
           </div>
         ))}
