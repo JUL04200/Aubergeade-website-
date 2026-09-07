@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { restaurant } from "@/data/site";
 
 export default function Hero() {
@@ -6,11 +7,19 @@ export default function Hero() {
       id="accueil"
       className="relative flex min-h-[92vh] items-center overflow-hidden bg-charcoal text-cream"
     >
+      <Image
+        src="/images/poisson-table.jpg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
       <div
-        className="absolute inset-0 bg-grain"
+        className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(120% 90% at 15% 0%, rgba(184,137,79,0.18) 0%, transparent 55%), radial-gradient(100% 80% at 100% 100%, rgba(111,29,43,0.55) 0%, transparent 60%), linear-gradient(160deg, #241b16 0%, #1a1310 55%, #2b1013 100%)",
+            "radial-gradient(120% 90% at 15% 0%, rgba(184,137,79,0.15) 0%, transparent 55%), linear-gradient(100deg, rgba(36,27,22,0.97) 0%, rgba(36,27,22,0.92) 42%, rgba(74,17,25,0.55) 75%, rgba(74,17,25,0.35) 100%)",
         }}
       />
       <div
