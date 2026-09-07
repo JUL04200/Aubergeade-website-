@@ -65,7 +65,7 @@ export default function Menu() {
 
         <div className="mt-10">
           {tab === "Formules" && (
-            <div className="grid gap-8 lg:grid-cols-3">
+            <div className="grid items-start gap-8 lg:grid-cols-3">
               <div className="rounded-2xl bg-white/5 p-7">
                 <h3 className="font-display text-lg font-semibold text-gold-light">
                   Les Petits Encas
@@ -85,7 +85,7 @@ export default function Menu() {
           )}
 
           {tab === "La carte" && (
-            <div className="grid gap-10 lg:grid-cols-2">
+            <div className="grid items-start gap-10 lg:grid-cols-2">
               <div className="rounded-2xl bg-white/5 p-7">
                 <h3 className="font-display text-lg font-semibold text-gold-light">Entrées</h3>
                 <div className="mt-4 text-cream/90">
@@ -104,7 +104,7 @@ export default function Menu() {
 
           {tab === "Cave & boissons" && (
             <div className="space-y-10">
-              <div className="grid gap-8 lg:grid-cols-3">
+              <div className="grid items-start gap-8 lg:grid-cols-3">
                 <div className="rounded-2xl bg-white/5 p-7">
                   <h3 className="font-display text-lg font-semibold text-gold-light">
                     Vins &mdash; bouteilles 75 cl
@@ -160,7 +160,7 @@ export default function Menu() {
                 </div>
               </div>
 
-              <div className="grid gap-8 lg:grid-cols-3">
+              <div className="grid items-start gap-8 lg:grid-cols-3">
                 <div className="rounded-2xl bg-white/5 p-7">
                   <h3 className="font-display text-lg font-semibold text-gold-light">Apéritifs</h3>
                   <div className="mt-4 text-cream/90">
