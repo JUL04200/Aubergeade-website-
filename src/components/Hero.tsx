@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="accueil"
-      className="relative flex min-h-[92vh] items-center overflow-hidden bg-charcoal text-cream"
+      className="relative flex min-h-[100svh] items-center overflow-hidden bg-charcoal text-cream sm:min-h-[92vh]"
     >
       <Image
         src="/images/poisson-table.jpg"
@@ -67,7 +67,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <dl className="mt-16 grid max-w-xl grid-cols-3 gap-6 border-t border-cream/15 pt-8 text-cream/80">
+        <dl className="mt-16 grid max-w-xl grid-cols-2 gap-6 border-t border-cream/15 pt-8 text-cream/80 sm:grid-cols-3">
           <div>
             <dt className="text-xs uppercase tracking-widest text-gold-light">Quartier</dt>
             <dd className="font-display mt-1 text-lg">12ᵉ arrondissement</dd>
