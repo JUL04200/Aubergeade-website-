@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --color-cream: #f8f1e4;
+  --color-cream-dark: #efe2c8;
+  --color-bordeaux: #6f1d2b;
+  --color-bordeaux-dark: #4a1119;
+  --color-bordeaux-light: #8a2c3c;
+  --color-charcoal: #241b16;
+  --color-charcoal-soft: #362a22;
+  --color-gold: #b8894f;
+  --color-gold-light: #d9b581;
+}
+
+@theme inline {
+  --color-cream: var(--color-cream);
+  --color-cream-dark: var(--color-cream-dark);
+  --color-bordeaux: var(--color-bordeaux);
+  --color-bordeaux-dark: var(--color-bordeaux-dark);
+  --color-bordeaux-light: var(--color-bordeaux-light);
+  --color-charcoal: var(--color-charcoal);
+  --color-charcoal-soft: var(--color-charcoal-soft);
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
+  --font-display: var(--font-playfair);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-bordeaux);
+  color: var(--color-cream);
+}
+
+.bg-grain {
+  background-image: radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 255, 255, 0.06) 0,
+      transparent 45%
+    ),
+    radial-gradient(circle at 80% 60%, rgba(255, 255, 255, 0.05) 0, transparent 40%);
+}
